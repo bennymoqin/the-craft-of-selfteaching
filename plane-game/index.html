@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>飞机大战</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <main class="game-wrapper">
+      <header class="hud">
+        <button id="start-button" class="primary">开始游戏</button>
+        <div class="stats">
+          <span>得分：<strong id="score">0</strong></span>
+          <span>生命：<strong id="lives">3</strong></span>
+        </div>
+      </header>
+      <canvas id="game-canvas" width="480" height="640"></canvas>
+      <section id="message" class="message hidden"></section>
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
